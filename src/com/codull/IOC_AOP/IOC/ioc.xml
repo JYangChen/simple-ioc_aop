@@ -1,0 +1,16 @@
+<beans>
+
+    <bean id="wheel" class="com.codull.IOC_AOP.IOC.Wheel">
+        <property name="brand" value="QAQ"></property>
+        <property name="specification" value="265/60 R18"></property>
+    </bean>
+
+    <bean id="car" class="com.codull.IOC_AOP.IOC.Car">
+            <property name="name" value="BC"></property>
+        <property name="length" value="5213mm"></property>
+        <property name="width" value="2100mm"></property>
+        <property name="height" value="2178mm"></property>
+        <property name="wheel" ref="wheel"></property>
+    </bean>
+
+</beans>
